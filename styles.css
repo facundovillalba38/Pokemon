@@ -1,0 +1,16 @@
+#color-slider {
+    -webkit-text-stroke: 2px black;
+    
+}
+
+#pkmn-description-t, #pkmn-description-p {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#pkmn-description-p {
+    text-align: center ;
+}
+
+#titulo-app {
+    margin-left: 10px;
+}

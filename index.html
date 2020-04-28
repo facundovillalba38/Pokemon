@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pokemon</title>
+
+</head>
+<body>
+    <nav class="nav-extended blue">
+        <div class="nav-wrapper">
+        <div id="titulo-app">
+          <a href="#" class="brand-logo">Pokemon WebApp</a>
+        </div>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="generation.html">Generación</a></li>
+            <li><a href="types.html">Tipos</a></li>
+          </ul>
+        </div>
+    </nav> 
+
+
+    <div class="container section">
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="img/pokemon-1513925_1280.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3 id="color-slider">Pokemon API</h3>
+                  <h5 class="light grey-text text-lighten-3" id="color-slider" >Puedes ver a tus pokemons favoritos!</h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/pokemon-1536855_1280.png"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3 id="color-slider">Pokemon WebApp</h3>
+                  <h5 class="light grey-text text-lighten-3">Encuentra al tuyo!</h5>
+                </div>
+              </li>
+              
+            </ul>
+        </div>
+
+        <div id="pkmn-description">
+            <h3 id="pkmn-description-t">Pokemon WebApp</h3>
+            <p id="pkmn-description-p"> 
+                Esta es una web app que toma datos de la api que se encuentra en el sitio <a href="https://pokeapi.co/">https://pokeapi.co/</a> <br>
+                Se toman los datos de los pokemons incluidos entre la primera y cuarta temporada de la saga.<br>
+                Se pueden filtrar tanto por <a href="generation.html">generación</a> como por los <a href="types.html">tipos</a> de pokemon existentes.<br>
+                Encuentra a tu favorito!
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Facundo Villalba
+          <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/facundo-villalba-6a0171180/" target="_blank">Linkedin</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>  
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            interval: 3000
+        });
+      });
+    </script>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>

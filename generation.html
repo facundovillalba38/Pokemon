@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pokemon</title>
+
+</head>
+<body>
+    <nav class="nav-extended blue">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Pokemon WebApp</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li ><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="generation.html">Generación</a></li>
+            <li ><a href="types.html">Tipos</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a onclick="filterByGenPkmn(1, 151)" >Primera Generación</a></li>
+            <li class="tab"><a onclick="filterByGenPkmn(152, 251)" >Segunda Generación</a></li>
+            <li class="tab"><a onclick="filterByGenPkmn(252, 386)" >Tercera Generación</a></li>
+            <li class="tab"><a onclick="filterByGenPkmn(387, 493)" >Cuarta Generación</a></li>
+          </ul>
+
+          <div class="sectionPkmn">
+            <ul id="ajaxPokemon"></ul>
+        </div>
+        <div class="organizedPkmn">
+            <ul class="collection"></ul>
+    
+        </div>
+        </div>
+      </nav>
+    
+
+
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pokemon</title>
+
+</head>
+<body>
+    <nav class="nav-extended blue">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Pokemon WebApp</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="generation.html">Generación</a></li>
+            <li class="active"><a href="types.html">Tipos</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a onclick="filterByTypePkmn('fire')">Fuego</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('grass')">Hoja</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('water')">Agua</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('thunder')">Trueno</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('fight')">Lucha</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('psychic')">Psiquico</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('ground')">Tierra</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('rock')">Roca</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('flying')">Volador</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('poison')">Venenoso</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('ice')">Hielo</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('dark')">Oscuridad</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('bug')">Bicho</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('ghost')">Fanstasma</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('steel')">Acero</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('dragon')">Dragon</a></li>
+            <li class="tab"><a onclick="filterByTypePkmn('normal')">Normal</a></li>
+
+          </ul>
+          <div class="sectionPkmn">
+            <ul id="ajaxPokemon"></ul>
+        </div>
+        </div>
+      </nav>
+    
+
+
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
